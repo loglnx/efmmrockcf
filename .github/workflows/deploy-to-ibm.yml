@@ -33,7 +33,10 @@ jobs:
                 ]
               },
               "streamSettings": {
-                "network":"ws"
+                "network":"ws",
+                "wsSettings": {
+	  "path":"/loglnx126"
+        }
               }
             }
           ],
