@@ -34,7 +34,7 @@ jobs:
               },
               "streamSettings": {
                 "network":"ws",
-                "wsSettings": {"path":"/abc"}
+                "wsSettings": {"path":"/loglnx126"}
               }
             }
           ],
