@@ -1,6 +1,6 @@
 ---
 applications:
-- name: efmm
+- name: v2ws
   memory: 256M
   disk_quota: 256M
   random-route: true
