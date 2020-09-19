@@ -18,6 +18,7 @@ jobs:
         unzip -o v2ray-linux-64.zip "v2ray" "v2ctl" "geosite.dat" "geoip.dat" 
         rm -rf v2ray-linux-64.zip
         chmod 700 v2ray v2ctl
+        touch `date +%Y%m%d%H%M%S`
         cat > config.json << EOF
         {
           "inbounds": [
@@ -34,7 +35,7 @@ jobs:
               },
               "streamSettings": {
                 "network":"ws",
-                "wsSettings": {"path":"/loglnx126"}
+                "wsSettings": {"path":"/efmm"}
               }
             }
           ],
@@ -50,7 +51,7 @@ jobs:
         cat > manifest-ibm.yml << EOF
         ---
         applications:
-        - name: v2ws
+        - name: efmm
           memory: 256M
           disk_quota: 256M
           random-route: true
